@@ -1,0 +1,360 @@
+HTTP Return Codes
+
+1XX(100-199)=>Processing Stage=>Informational responses
+2XX(200-299)=>Sucess=>Successful responses
+3XX(300-399)=>Redirecting=>Redirection messages 
+4XX(400-499)=>Client Screwed Up=>Client error responses
+5XX(500-599)=>Server Screwed Up=>Server error responses
+
+
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#client_error_responses
+
+
+To declare , we need to use var keyword
+
+DataTypes:
+
+1.Primitive DataTypes
+2.Composite DataTypes
+3.Trivial DataTypes
+
+typeof()
+
+typeof(2)
+>'number'
+typeof('2')
+>'string'
+typeof("hello")
+>'string
+typeof(true)
+>'boolean'
+typeof(false)
+>'boolean'
+typeof(2.3)
+'number'
+
+1.Primitive DataTypes
+Inbuit DataTypes
+1.Number(2.3 ,2)
+2.String("2","hi",'hello')=>inside single/double quotes
+3.Boolean(true(1) and false(0))
+
+Number DataTypes:
+
+var abc=20
+abc
+20
+console.log(abc)
+
+
+var xyz=20.3
+xyz
+20.3
+typeof(xyz)
+'number'
+
+parseInt
+parseInt(xyz)
+20
+pqr="2string"
+'2string'
+parseInt(pqr)
+2
+pqr='2st2ring'
+'2st2ring'
+parseInt(pqr)
+2
+pqr="string22"
+'string22'
+parseInt(pqr)
+NaN
+
+parseFloat(20.3)
+20.3
+parseFloat(pqr)
+NaN
+pqr="2string"
+'2string'
+'2string'
+parseFloat(pqr)
+2
+parseFloat(20.3)
+20.3
+parseInt(20.3)
+20
+
+Number(20.3)
+20.3
+Number(20)
+
+var a=30
+var b=40
+20+30
+50
+parseInt(20)+parseInt(20.3)
+40
+var a=30
+undefined
+var b=40
+undefined
+a+b
+70
+parseInt(20)+parseFloat(20.3)
+40.3
+
+
+2.String("2","hi",'hello')=>inside single/double quotes
+
+var str="Hello DataTypes, How are you, i know you are a string DataType"
+
+var str="Hello DataTypes, How are you, i know you are a string DataType"
+
+str
+'Hello DataTypes, How are you, i know you are a string DataType'
+console.log(str);
+
+typeof(str)
+'string'
+
+"10"+20+30
+ans:
+>>'102030'
+Break Up
+
+"10"+20+30
+'102030'
+"10"+20
+'1020'
+'1020'+30
+'102030'
+
+String+number=string
+left to right
+
+10+"20"+30-1
+ans:
+102029
+
+100a-1
+ans>>NaN
+
+
+
+Boolean
+true and false
+var d="true"
+console.log(d)
+
+var d="true"
+console.log(d)
+
+typeof(d)
+'string'
+
+2.Composite DataTypes
+1-Arrays:
+2-Object:
+
+Arrays:
+
+https://pythontutor.com/render.html#mode=edit
+
+
+>Collection of heterogenous DataTypes
+>represent =>[] and it seperated by commas
+>it referred as elements
+>sequnetial chunks of memory
+>Also reffered as object
+>start with 0 and ends with memory location-1 (n-1)
+
+Write:
+var arr=[23]
+var arr1=["23", 23, "hello","true"]
+
+4=>length of the Arrays
+
+{
+    0:"23"
+    1:23
+    2:"hello"
+    3:"true"
+}
+
+length of array:
+arr1.length
+
+for(var i=0;i<arr1.length;i++){
+    console.log(arr1[i])
+}
+23
+23
+hello
+true
+
+>> output as hello
+console.log(arr1[2])
+
+
+arr1[100]="tutor"
+1.length?=>101
+2.Last Index=>100
+3.What will be values after 3rd index till the last index no-1=>undefined
+
+
+Objects:
+>Key:value pair
+>represent {}  and it seperated by commas
+
+var studetail={
+        fname:"Abinav",
+        lname:"Krishna",
+        age:23,
+        email:"abhi123@gmail.com"
+}
+console.log(studetail)
+age: 23
+email: "abhi123@gmail.com"
+fname: "Abinav"
+lname: "Krishna"
+
+2ways u can access values
+.dot operator
+[""] square bracket
+
+console.log(studetail[age])
+
+console.log(studetail["age"])
+
+var studetail1={
+        "first name":"Abinav",
+        "last name":"Krishna",
+        age:23,
+        email:"abhi123@gmail.com"
+}
+
+read/retrive
+studetail1.age
+>23
+
+studetail1.email
+>'abhi123@gmail.com'
+
+studetail1["first name"]
+>'Abinav'
+
+studetail1["age"]
+>23
+
+////insert
+
+studetail1.gender="male"
+
+studetail1.gender="male"
+'male'
+studetail1
+{first name: 'Abinav',
+ last name: 'Krishna', 
+ age: 23,
+email: 'abhi123@gmail.com', 
+gender: 'male'
+  }
+  
+  
+studetail1.hobbies=["singing","dancing","programming"]
+(3) ['singing', 'dancing', 'programming']
+studetail1
+{
+    first name: 'Abinav',
+    last name: 'Krishna', 
+    age: 23,
+    email: 'abhi123@gmail.com', 
+    gender: 'male',
+    hobbies:['singing', 'dancing', 'programming']
+}
+
+
+////update:
+studetail1.age=45
+
+studetail1
+{
+    first name: 'Abinav',
+    last name: 'Krishna', 
+    age: 45,
+    email: 'abhi123@gmail.com', 
+    gender: 'male',
+    hobbies:['singing', 'dancing', 'programming']
+}
+
+studetail1.rollcall=5
+
+studetail1
+{
+    first name: 'Abinav',
+    last name: 'Krishna', 
+    age: 45,
+    email: 'abhi123@gmail.com', 
+    gender: 'male',
+    hobbies:['singing', 'dancing', 'programming'],
+    roll call:5
+}
+
+////delete
+
+delete studetail1.age
+studetail1
+{
+    first name: 'Abinav',
+    last name: 'Krishna', 
+    email: 'abhi123@gmail.com', 
+    gender: 'male',
+    hobbies:['singing', 'dancing', 'programming']
+}
+//length: 
+
+Object.keys(studetail1).length
+
+3.Trivial DataTypes:
+undefined 
+not defined
+null
+
+
+desktop
+VM46:1 Uncaught ReferenceError: desktop is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM46:1
+var desktop
+undefined
+
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/null
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
