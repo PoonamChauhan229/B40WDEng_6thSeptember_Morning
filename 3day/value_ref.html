@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callby value and call by refernece</title>
+</head>
+<body>
+    <script>
+        // call by value
+        var a=5
+        var b=a
+        console.log(a,b)
+        a=30
+        console.log(a,b)
+        
+        // call by refernece
+        var arr=["hi",1,2,4]
+        var arr1=arr
+        console.log(arr,arr1)
+        arr[2]=100
+        console.log(arr,arr1)
+        console.log(document.body)
+
+    </script>
+</body>
+</html>

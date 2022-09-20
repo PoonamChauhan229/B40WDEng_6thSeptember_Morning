@@ -1,0 +1,197 @@
+Call/Copy by value and Call/Copy by reference
+window and document object
+Array and JSON iteration
+
+Copy by value:
+Primtive datatype=>string, number,boolean
+a=5
+a=b
+b=5
+
+memory=>a=5and b=5
+a=b=5
+
+a=20
+b=5
+
+Call/Copy by reference:
+Composite datatype:=>array, objects
+x=[]
+y=x
+x[2]=""
+x=?=>alongwith the changed value
+y=?=>same as x
+
+Difference:
+
+window and document object:
+
+Document object:
+Webpage
+HTML elements can be accessed
+
+properties amd methods
+
+Properties:
+document.property_name
+head,title,body,forms,links,URL
+
+Methods:
+document.method_name
+addEventListener()
+createAttribute()
+
+Window Object:
+Properties
+window.property_name
+window.innerWidth
+739
+window.innerWidth
+744
+window.innerHeight
+657
+window.length
+0
+window.console
+
+Methods:
+window.method_name
+
+window.close()
+window.alert()
+window.setTimeout()
+window.clearTimeout()
+window.stop()
+window.prompt()
+
+
+Array and JSON iteration:
+Array:
+Object:
+JSON:
+JavasSript Object Notation=JSON
+key value pair
+{
+    "firstname":"guvi"
+    "lastname":"geek"
+}
+
+Array of JSON/object
+[
+    {},{},{}
+]
+
+JSON:
+lightweight, self descriptive
+easy to write and understand
+
+receive any data from server=>string=>JSON
+send the data to server =>object =>JSON=>string
+
+JSON Methods:
+JSON.parse()
+
+takes the JSON string and transform into JS Object
+receive any data from server=>string=>Parse/convert that particular data into object
+
+let text = '{ 
+                "employees" : 
+                [' +
+                    '{ "firstName":"John" , "lastName":"Abrahm" },' +
+                    '{ "firstName":"Johnny" , "lastName":"Jones" } 
+                ]
+            }';
+var jsonObj=JSON.parse(text)
+
+
+JSON.stringify:
+
+var obj={
+    name:"John",
+    age:"30",
+    city:"NewYork"
+}
+var jsonString=JSON.stringify(obj)
+
+iteration: repeatition of process
+:
+
+Loops:
+
+for Loops:
+
+1-10
+for(var i=1;i<=10;i++){
+    console.log(i)
+}
+
+10-1
+for(var i=10;i>0;i--){
+    console.log(i)
+}
+
+Print Star pattern
+*****
+*****
+*****
+*****
+*****
+
+
+
+*
+**
+***
+****
+*****
+
+
+Loops:
+for Loop=>covered
+for Each=>After functions
+for In=>covered
+for of=>covered
+
+For in//obj
+
+var obj={
+    name:"John",
+    age:"30",
+    city:"NewYork"
+}
+
+for(var key in obj){
+console.log(key)
+console.log(obj[key])
+}
+
+for Of//array
+
+var cars=["BMW","Volvo","Mini"]
+for( let index of cars){
+    console.log(index)
+    console.log(cars[index])
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
