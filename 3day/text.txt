@@ -172,6 +172,14 @@ for( let index of cars){
     console.log(index)
     console.log(cars[index])
 }
+//object:
+var obj={
+
+}
+for( let obj of cars){
+  console.log(obj.name)  
+}
+
 
 
 

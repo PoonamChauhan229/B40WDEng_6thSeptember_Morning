@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var=>we can re-declare n no. of times,reassign n no.of times
+        // =>overwriting the values
+        // var=>global scope or functional scope
+        var a=10;
+        console.log(a)
+
+        a=20;
+        console.log(a)
+
+        var a=100
+        console.log(a)
+
+        var a=500
+        console.log(a)
+
+
+        // let=>we can reassign the values but we cant redeclare
+        //let=>block scope
+        let b=10;
+        console.log(b)
+
+        b=20;
+        console.log(b)
+
+        // let b=50;
+        // console.log(b)
+        //Uncaught SyntaxError: Identifier 'b' has already been declared (at var_let_const.html:34:13)
+
+        // const=>we cannot reassign and cannot redeclare
+        // block scope
+
+        const c=200;
+        console.log(c)
+
+        // c=500;
+        // console.log(c)
+        //Uncaught TypeError: Assignment to constant variable.  at var_let_const.html:44:10
+
+        // const c=900;
+        // console.log(c)
+        //Uncaught SyntaxError: Identifier 'c' has already been declared
+
+    </script>
+</body>
+</html>

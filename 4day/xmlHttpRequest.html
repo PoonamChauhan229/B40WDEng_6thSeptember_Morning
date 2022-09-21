@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Free API: restcountries
+        // 4 steps 
+        // 1. create XHR object
+        // new kewyword
+        //deceiding what to order
+        // request is userdefined 
+        // communicate it is imp
+        var request=new XMLHttpRequest();
+
+        // 2.Opening an connection
+                //=>3 params-1.http method=>GET, 2-URL-API URL, 3-true (optional)
+                //choose the waiter and placing the order
+        request.open('GET','https://restcountries.com/v3.1/all',true)
+
+        // sending the request//initate the connection
+        //waiter will go to kitchen and order will be placed
+        request.send();
+
+        //4.server response
+        //get the response=>food=>biryani
+        // JSON=> parse this data
+        //request.response
+        // =>string in format=>
+        //  JSON.parse(request.response)=> var data=JSON.parse(request.response)
+        // console.log(data)
+        // onload event=>on the page load
+        // global event
+        //250 COUNTRIES DATA
+        request.onload=function(){
+            // console.log(request.response)
+            // var data=JSON.parse(request.response)
+            var data=JSON.parse(this.response)
+            console.log(data)
+            console.log(data[0].area)
+            console.log(data[0].name)
+            console.log(data[0].name.common)
+
+            // For loop
+            for(i=0;i<data.length;i++){
+                console.log(data[i].name)
+            }
+
+            // for Of loop
+            for(var obj of data){
+                console.log(obj.name)
+            }
+
+
+            // for In loop
+            for(var key in data){
+                console.log(data[key].name);
+            }
+
+
+
+
+
+        }
+    </script>
+</body>
+</html>

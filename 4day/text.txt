@@ -1,0 +1,75 @@
+Hoisting & scope
+var let const
+XMLHTTP Request
+Introduction to functions
+
+
+comment in javascsript:
+single line://
+multi line:
+/*
+sdfghjklcvb
+dfghjkl
+dfghjkl
+dfghjkl
+*/
+
+short cut key for comments: Ctrl+/
+
+var :
+Hoisting:
+variable can be used before its declared
+
+
+var let const
+=>declare the variables
+
+var:
+oldest way to dcelare the variable
+ // var=>we can re-declare n no. of times,reassign n no.of times
+// =>overwriting the values
+// var=>global scope
+
+let and const were introduced in ES6
+
+let:improve dversion of var keyword
+
+const:
+
+
+scope:
+block scope:
+variables declared inside the block cannot be accessed outside the block
+function scope=> at the end(covered)
+global scope
+
+{
+
+}
+
+XMLHTTP Request:
+XMLHTTP Request helps us to communicate/interact with the server via API:
+
+API:Applucation Programming Interface
+https://restcountries.com/
+Refer API DOCUMENATION ************
+
+
+Function:
+What is function
+
+Function are the heart of JS
+reusability
+whenever we want to perform specfic set of task again and agian 
+functionname is userdefined
+function functionname(){
+    //block of code
+}
+functionname()
+
+
+Annoymous function:
+NO name
+
+let annoy= function(){}
+annoy()
