@@ -80,7 +80,6 @@ Array of JSON/object
 [
     {},{},{}
 ]
-
 JSON:
 lightweight, self descriptive
 easy to write and understand
@@ -94,13 +93,11 @@ JSON.parse()
 takes the JSON string and transform into JS Object
 receive any data from server=>string=>Parse/convert that particular data into object
 
-let text = '{ 
-                "employees" : 
-                [' +
-                    '{ "firstName":"John" , "lastName":"Abrahm" },' +
-                    '{ "firstName":"Johnny" , "lastName":"Jones" } 
-                ]
-            }';
+let text = '{ "employees" : [' +
+'{ "firstName":"John" , "lastName":"Doe" },' +
+'{ "firstName":"Anna" , "lastName":"Smith" },' +
+'{ "firstName":"Peter" , "lastName":"Jones" } ]}';
+
 var jsonObj=JSON.parse(text)
 
 
