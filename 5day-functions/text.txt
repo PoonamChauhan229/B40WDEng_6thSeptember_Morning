@@ -1,0 +1,83 @@
+Function & return keyword
+types of function
+
+Function:
+
+Function are the heart of JS
+reusability
+whenever we want to perform specfic set of task again and agian 
+functionname is userdefined and it should be unique
+
+function keyword followed by functionname
+Syntax
+function functionname(){
+    //block of code
+}
+functionname()//calling a function with the functionname()//Invoking a function
+
+1-Parameter:
+2-Arguments:
+
+Syntax
+add 2 no :
+pass that 2 nos to the function
+function with Parameter
+
+function functionname(Parameter1,Parameter2){
+    //block of code
+    console.log(Parameter1+Parameter2)
+}
+functionname(Argument1,Argument2)
+
+function functionname(a,b){//parameter
+    //block of code
+    console.log(a+b)
+}
+functionname(3,2)//arguments=>values
+
+Function with return keyword:
+
+
+var abc=["a","b","c","d","e"]
+undefined
+abc.slice(0,2)
+(2) ['a', 'b']
+abc.slice(0,4)
+(4) ['a', 'b', 'c', 'd']
+
+
+Functions:
+Types:
+1-Anonymous Function
+2-Arrow Function
+3-IIFE Function
+
+1-Anonymous Function:
+
+no name
+global event handlers , use this Anonymous function
+
+Syntax
+var variablename=function(){
+
+}
+variablename()
+
+
+3-IIFE Function=>Immediately Invoked Function Expression
+Syntax
+(
+    function(parameter){
+        console.log(parameter)
+    }
+)(arguments);
+
+Arrow Function:
+ES6
+
+var variablename=(parameter,Parameter1)=>{
+    //block of code
+}
+variablename()
+
+

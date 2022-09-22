@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // add/sum of all elements of an array
+        // [1,2,3,4,5,6]
+
+        // iife function
+    (
+        function(arr){
+            var total=0;
+            for(i=0;i<arr.length;i++){
+                total=total+arr[i]
+            }
+            console.log(total)
+        }
+      )([1,2,3,4,5,6,7,8,9])
+
+      // normal function   //for of     
+      function sumnormal(arr){
+        var total=0;
+            for(var val of arr){
+                // console.log(val)
+                total=total+val  
+            }
+            console.log(total)
+        }
+      sumnormal([1,2,3,4,5,6,7,8,9]);
+
+      //   annonynous function // for in
+
+    var sumannoymous=function(arr){
+        var total=0;
+            for(var key in arr){
+                // console.log(key)
+                // total=total+arr[key]   
+                    total+=arr[key]             
+            }
+            console.log(total)
+        }
+    sumannoymous([1,2,3,4,5,6,7,8,9]);
+
+
+     //arrow function
+
+     var sumarrow=(arr)=>{
+        var total=0;
+            for(i=0;i<arr.length;i++){
+                // total=total+arr[i] 
+                total+=arr[i]
+            }
+            console.log(total)
+        }
+        sumarrow([1,2,3,4,5,6,7,8,9]);
+
+    </script>
+</body>
+</html>

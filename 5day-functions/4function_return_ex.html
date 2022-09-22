@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 4 Subjects:Maths+History+Chemistry+Javascript        
+        // marks: out of 100||Semester Pages
+        // calculate the percentage
+
+        // Steps:
+        // Maths:90,History:94,Chemistry:96,Javascript:100
+        // Formuala:Total Marks Obtained/Total Marks *100
+        
+
+        function sum(a,b,c,d){
+            var total=a+b+c+d;
+            return total;
+        }
+        console.log(sum(90,94,96,100))
+
+        var totalsum=sum(90,94,96,100)
+        console.log(totalsum)//380
+
+        function percentage(x){
+            var per=x/400*100
+            console.log(per)
+        }
+        percentage(totalsum)
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
