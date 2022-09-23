@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // case1:spread array into elements
+        var arr=["hello","guvi"]
+        console.log(...arr)
+
+        // case2:spread string into elements
+        var str="hello"
+        console.log(...str)
+        console.log([...str])
+
+        // case3:combine an array:
+        arr1=[1,2,3,4]
+        arr2=[5,5,6,7,8]
+        var arr3=[...arr1,...arr2]
+        console.log(arr3)
+    </script>
+</body>
+</html>

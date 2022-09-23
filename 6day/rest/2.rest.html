@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // add sum of all elements in array using rest operators/parameters
+
+      function findSum(...numbers) {
+        var sum = 0;
+        numbers.forEach(function(element){
+          sum += element;
+        });
+        return sum;
+      }
+      console.log(findSum(1, 2, 3));
+
+
+    </script>
+  </body>
+</html>

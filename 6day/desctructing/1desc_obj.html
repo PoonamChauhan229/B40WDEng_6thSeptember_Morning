@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // desc an object
+
+        let obj={
+            name:"ABC",
+            age:21,
+            salary:450099
+        }
+        console.log(obj)
+        console.log(obj.name)
+        console.log(obj["age"])
+
+        let{name,fage,salary}=obj
+        console.log(name)
+        console.log(fage)
+        console.log(salary)
+        // 
+        let{...arr}=obj
+        console.log(arr)
+
+    </script>
+</body>
+</html>

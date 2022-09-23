@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function myFun(a,b,...manyMoreArgs){
+            console.log(a)
+            console.log(b)
+            console.log(manyMoreArgs)
+
+        }
+        myFun("one","two","three","four","six","seven","eight")
+
+
+        function myFunone(...args){
+            console.log(args)
+        }
+        myFunone("one","two","three","four","six","seven")
+
+        // function myFuntwo(a,...args,b){
+        //     console.log(a)
+        //     console.log(b)
+        //     console.log(args)
+
+        // }
+        // myFuntwo("one","two","three","four","six","seven")
+        // Uncaught SyntaxError: Rest parameter must be last formal parameter (at 1rest.html:25:36)
+    </script>
+</body>
+</html>

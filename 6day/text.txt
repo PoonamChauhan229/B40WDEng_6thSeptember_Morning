@@ -1,0 +1,76 @@
+For Each:
+
+var arr=[1,2,3,4,5]
+
+arr.forEach((element)=>console.log(element*2))
+
+const fruits = ["apple", "orange", "cherry"];
+
+fruits.forEach((element)=>console.log(element))
+apple
+orange
+cherry
+
+fruits.forEach((element,index)=>console.log(element,index))
+apple 0
+orange 1
+cherry 2
+
+fruits.forEach((element,index)=>console.log(index+2))
+2
+3
+4
+
+
+ES5 and ES6:
+specification ECMA international:
+
+ECMASCRIPT:
+ES5: 2009 ES5 2009
+:function and return keyword
+:var
+:LowPerformance
+:large community supports
+
+ES6: 2015 
+:Arrow function and we dont require return keyword
+:let const
+:High/ better performance than ES5
+:less community than ES5
+
+ES5 and ES6:
+var let const
+block scoping
+spread operator and rest operator
+
+
+
+spread operator and rest operator
+...
+
+
+spread operator
+Spread the elments of an array
+...
+
+Math Properties:(Selfstudy)
+ceil
+floor
+random
+min
+max
+abs
+round
+
+
+Rest operator:
+Rest paramater
+2,3,4,5
+
+...args
+last paramater
+
+Destructuring:
+Unpacking of array and objects:
+
+React: Hooks -in functional component
