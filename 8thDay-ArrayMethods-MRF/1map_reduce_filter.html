@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr=[1,2,3,4]
+        console.log(arr)
+
+        // double this arr
+
+        var resultmap=arr.map((element)=>element*2)
+        console.log(resultmap)
+
+        // filter even
+        var resultfilter=resultmap.filter((element)=>element%2==0)
+        console.log(resultfilter)
+
+        // 2 lines
+        // 1single line
+        console.log(arr.map((element)=>element*2).filter((element)=>element%2==0).reduce((acc,element)=>acc+element))
+        console.log(arr)
+
+        // 1st odd num
+        // double 
+        // sum
+        var arr=[1,2,3,4,5,5]
+    console.log(arr.filter((element)=>element%2!=0).map((element)=>element*2).reduce((acc,element)=>acc+element))
+
+
+        
+
+    </script>
+</body>
+</html>

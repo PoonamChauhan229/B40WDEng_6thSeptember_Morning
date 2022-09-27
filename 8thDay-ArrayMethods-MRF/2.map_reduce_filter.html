@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // marks>50 => Bob
+        var student=[
+            {
+                name:"Alex",
+                marks:50
+            },
+            {
+                name:"Bob",
+                marks:70
+            },
+            {
+                name:"Karl",
+                marks:40
+            },
+        ]
+        
+        console.log(student)
+        var result = student.filter((element)=>element.marks>50);
+        console.log(result);
+
+        // Bob as an output||["Bob"]
+        
+        var newresult = student.filter((element)=>element.marks>50)
+
+        // {name,marks}
+        
+        var result6=newresult.map((element)=>element.name).toString()
+        console.log(result6)
+
+       
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+Array Methods:
+
+Array:
+[]
+heterogrenoues data types
+0 index
+n-1
+elements
+,
+composite data type
+
+[2,3,4,"guvi",6,8,true]
+
+Map
+Reduce
+Filter
+
+Map:
+Array Methods
+transform an array
+work on each and each element
+return an new array
+function as an parameter
+
+arr.map
+
+for loop
+var arr=[1,2,3,4,5]
+each to element to be doubled
+[2,4,6,8,10]
+Step1:declare and varaible an assign to array
+Step2:check till what length loop is going to run(length)
+Step3:for loop
+Step4:execution code
+Step5:printing(console)
+Step6:Loop will terminate, if condition fails
+Step7:End
+
+work on work on each element => acheive for loop
+
+arr.map(function)
+arr.map((element)=>{
+    //block of code
+})
+1-element
+2-element
+
+
+Script tag:
+inside html
+3 places 
+inside our head tag
+inside our body
+external js file
+
+
+
+Filter Method:
+function as an parameter
+condition=>eliminate something and give you the output
+if(a>b)=>ans
+condition is satisfied: get the o/p
+condition not satisfied:ignored
+
+arr.filter(function)
+
+= assignment
+== comparision !=
+=== comparision along with datatypes !==
+
+
+
+reduce:
+adding an element of an array
+[1,2,3,4,5]=1+2+3+4+5=??=>transformed into 1 single entity/number
+
+reduces into single value
+function as an parameter
+arr.reduce()
+=> 2paramters
+
+accumulator=>1st element of the array, if you dont give||optional parameter||give the accumulator value=>consider
+value=>element
+
+var arr=[1,2,3,4,5]
+acc=100
+element
+>1
+>2
+>3
+>4
+>5
+
+acc=XXXX
+acc=1
+element
+>2
+>3
+>4
+>5
+
+

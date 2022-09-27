@@ -44,14 +44,17 @@ d) Write a piece of code that creates an instance of the class Movie with the ti
 
         }
 
-        // c) Write a method getPG, which takes an array of base type Movie as its argument, and returns a new array of only those movies in the input array with a rating of "PG". You may assume the input array is full of Movie instances. The returned array need not be full.
+        // c) Write a method getPG, which takes an array of base type Movie as its argument, 
+        // and returns a new array of only those movies in the input array with a rating of "PG". 
+        // You may assume the input array is full of Movie instances. The returned array need not be full.
 
         // Methods-outside constructor:
 
         getPG(array){
-            // console.log("hello getpg method")
-            // console.log(`${this.rating}`)
-            console.log(array)
+            // using filter method
+            var result4=array.filter((element)=>element.rating=="PG")
+            return result4
+
         }
 
       }
@@ -65,15 +68,24 @@ d) Write a piece of code that creates an instance of the class Movie with the ti
 
     var movie2 = new Movie("Casino Royale", "Eon Productions");
     console.log(movie2)
+    // var movie3 = new Movie("XYZ", "Eon Productions","PG14");
+    var movie1 = new Movie("Casino Royale", "Eon Productions","PG13");
+
+        var film1 = new Movie("James Bond"," Eon Productions")
+        var film2 = new Movie("Die Another day","Eon Productions","PG13")
+        var film3 = new Movie("Spectors","Eon Productions","PG")
+        var film4 = new Movie("Goldfinger","Eon Productions","PG13")
+        var film5 = new Movie("avatar","James Cameron")
 
     // instancename.methodname()
-    movie1.getPG()
-    movie2.getPG()
-
+    // movie1.getPG(array)
+    
     // array:
-    var arr=[movie1,movie2,movie3,movie5,movie6]
-    console.log(arr)
-    movie1.getPG(arr)
+    var arr=[film1,film2,film3,film4,film5]
+    // console.log(arr)
+    // film1.getPG(array)
+    console.log(movie1.getPG(arr))
+    // flim1,film3,film5
 
     </script>
   </body>
