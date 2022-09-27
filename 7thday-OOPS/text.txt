@@ -1,0 +1,68 @@
+OOPS:
+
+Object oriented Programming
+
+functions and methods=>till now
+ES6-OOPS concepts
+
+Class:
+Object:
+Methods:
+
+Class: blueprint of the object/template of the object
+
+class keyword
+
+Syntax:
+
+class Classname{
+
+} 
+
+Car : Properties of a car
+door/window:
+streing:
+engine:
+gear:
+accelator:
+wheels:
+boot/trunk:
+break:
+seats:
+model:
+brand:
+color:
+fuel:
+launch year:
+milage/speed:
+
+class Car{
+    constructor(){//parameters
+
+    }
+}
+
+// if you create an instanec of class Car
+//instance means creating an object
+//created an object keyword:-
+
+var s1=new Car();
+var s1=new Car2();xxxxxxxxxxxx
+
+var s2=new Car()
+var s3=new Car()//arguments
+
+constructor: nothing but the special way of assigning the values inside the 
+                keyword constructorr
+
+
+class Car{
+    constructor(name,year,name1){//parameters
+    this.name=name;
+    this.year=year
+    this.brand="TATA"
+    this.name1=name1
+    }
+}
+
+var s1=new Car("Audi",2022);

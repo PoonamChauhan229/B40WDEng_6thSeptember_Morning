@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- write a class to calculate the uber price. -->
+    <!-- Discount-25% to the user, then what will be the price-
+        create a new method -->
+
+    <!-- 
+        price
+        km
+        30Km= charges?
+     -->
+
+     <script>
+                class Uberprice {
+                        constructor(km) {
+                        this.km = km;
+                        this.p=km*30
+
+                        }
+
+                        getnewPrice(){
+                            // console.log(`Price is :${this.p}`)
+                            // var t=this.p
+                            // return t
+                            return `Price is :${this.p}`
+                        }
+
+                        // getprice(){
+                        // var price = 35;
+                        // if (this.km == null) {
+                        //     return price;
+                        // } else {
+                        //     price = this.km * price;
+                        //     return price;
+                        // }
+                        // }
+
+                        applyDisount(){
+                            var Discount=(25/this.p)*100
+                            // console.log(Discount)
+                            var DiscountedPrice=this.p-Discount
+                            // console.log(DiscountedPrice)
+                            return `Discounted Charged for the ride is ${DiscountedPrice.toFixed(2)}`
+                        }
+
+
+                    }
+                    var trip1 = new Uberprice(2);
+                    // console.log(trip1.getprice());
+                    // trip1.getnewPrice()
+                    console.log(trip1.getnewPrice())
+                    trip1.applyDisount()
+                    console.log(trip1.applyDisount())
+
+
+
+
+
+
+
+
+
+
+     </script>
+</body>
+</html>

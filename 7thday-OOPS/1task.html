@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- // Write a “person” class to hold all the details. -->
+    <script>
+      class Person{
+        constructor(name, height, color, gender, age) {
+          this.name = name;
+          this.height = height;
+          this.color = color;
+          this.gender = gender;
+          this.age = age;
+        }
+      }
+      var s2 = new Person("Neeraj", "5.6", "white", "Male", "22");
+      console.log(s2);
+
+      console.log(s2.name,s2.height,s2.color)
+
+      var s3 = new Person("Abinav", "5.8", "yellow", "Male", "25");
+      console.log(s3);
+
+      var s4 = new Person("Abinav", "", null, "Male", "25");
+      console.log(s4);
+
+    //pass the correct arguments as the parameters otherwise mismatch
+      var s4 = new Person("Abinav", null, "Male", "25");
+      console.log(s4);
+      var arr=[s2,s3,s4]
+
+      console.log(arr)
+
+    </script>
+  </body>
+</html>

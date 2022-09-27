@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Car{
+            constructor(name,year){
+                this.name=name,
+                this.year=year
+            }
+        }
+
+    //    instance of class=>object
+    var s1=new Car("Audi",2022)//2 args
+    console.log(s1)
+    console.log(s1.name)
+    
+    console.log(s1.year)
+
+    // n no of instanes for any class
+
+    var s2=new Car("Nexon",1990)
+    console.log(s2)
+    console.log(s2.name)
+
+    var s5=s1
+    console.log(s5)
+    console.log(s5.name)
+
+
+    s1.name="Benz"
+    console.log(s1.name)
+   
+
+   
+    </script>
+</body>
+</html>
