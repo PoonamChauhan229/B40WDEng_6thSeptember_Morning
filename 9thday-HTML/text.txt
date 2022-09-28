@@ -1,0 +1,49 @@
+Install this Extensions:
+
+Live Server-Ritwick Dey
+HTML CSS Support-ecmel
+vscode-icons-VSCode Icons Team
+
+
+HTML:
+HyperText Markup Language
+structure the webpages and web applications
+to build the static website
+
+markup |||||||||programming
+
+Shift+!
+certain document template
+
+<html>xyz</html>
+opening tag and closing tag
+<body></body>
+<title></title>
+
+self closing tags:
+<br/>=>next line
+
+
+Tags:
+Attributes:an additional info about that tag/element
+
+Tags:
+1.Header Tags:
+2.Paragraph Tag:
+3:Input Tags:
+4:Table Tag:
+5:Orderedlist and unorderedlist
+6:other Important Tags
+
+div:
+section:
+article:
+
+
+element:tag+content
+tag:p,h1,h2,div
+
+inline and block element
+
+inline=>print in a same line|| occupy its content width
+block=>it will take you the next line || occupy the entire width
