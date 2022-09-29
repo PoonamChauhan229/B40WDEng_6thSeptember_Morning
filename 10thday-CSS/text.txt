@@ -1,0 +1,47 @@
+CSS: Cascading style sheet:
+
+
+3 TYpes of CSS
+
+inline=>
+<p>Hello</p>
+internal
+limited to the particluar page
+external 
+seperate file and then linking to html page
+filename.css
+
+
+
+selector:
+<p>Hello</p>
+
+tag selector:
+p{property:value} h1{property:value}
+
+id selector:(uniue in nature)
+<p id="one">Heelo Worl</p>
+<p id="two">xxxxxxx</p>
+=>#
+#one{property:value}
+#two{property:value}
+
+class selector
+<p class="three">Heelo Worl</p>
+<p class="three">xxxxxxx</p>
+=>.
+.three{property:value}
+
+
+CSS properties:
+font:
+font-weight:
+width:
+height:
+color:
+backgroundcolor:
+text-align:
+
+display properties:
+inline 
+block
