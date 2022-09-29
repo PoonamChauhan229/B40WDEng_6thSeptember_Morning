@@ -47,3 +47,7 @@ inline and block element
 
 inline=>print in a same line|| occupy its content width
 block=>it will take you the next line || occupy the entire width
+
+
+Task:
+https://github.com/rvsp/HTML-CSS/blob/master/Mini-tasks/001-HTML.md
