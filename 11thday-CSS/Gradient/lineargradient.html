@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #lineargrad1{
+            width:600px;
+            height:200px;
+            /* background-color: yellow; */
+            background-image:linear-gradient(red,yellow,green)
+        }
+        /* left to right =>end destination*/
+        #lineargrad2{
+            width:600px;
+            height:200px;
+            /* background-color: yellow; */
+            background-image:linear-gradient(to right,pink,yellow)
+        }
+
+         /* right to left =>end destination*/
+         #lineargrad3{
+            width:600px;
+            height:200px;
+            /* background-color: yellow; */
+            background-image:linear-gradient(to left,green,yellow)
+        }
+
+        /* diagonal */
+        #lineargrad4{
+            width:600px;
+            height:200px;
+            /* background-color: yellow; */
+            background-image:linear-gradient(to bottom right,green,yellow)
+        }
+        /* degrees are preferable/best */
+        #lineargrad5{
+            width:600px;
+            height:200px;
+            /* background-color: yellow; */
+            background-image:linear-gradient(84deg,navy,yellow,red)
+        }
+
+    </style>
+</head>
+<body>
+    <div id="lineargrad1"></div><br>
+    <div id="lineargrad2"></div><br>
+    <div id="lineargrad3"></div><br>
+    <div id="lineargrad4"></div><br>
+    <div id="lineargrad5"></div><br>
+</body>
+</html>

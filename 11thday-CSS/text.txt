@@ -1,0 +1,103 @@
+Pseudo classes:
+
+defining the special state of the element
+
+Syntax:
+
+selector:pseudo-class{
+    property:value;
+}
+
+
+=>link
+=>visited
+=>hover
+=>active
+
+love hate
+
+
+Box Model:
+
+Wrapper around every html element
+
+Wrapper/Box Model:
+Margin:
+Padding:
+Border:
+
+Border:
+
+Width:
+border-top:
+border-bottom:
+border-right:
+border-left:
+
+Short hand Width:
+border-width:100px TRBL
+border-width:100px 500px TB RL
+border-width:100px 20px 30px 50px TRBL
+
+Best short hand property
+border:1px solid red
+
+
+Margin:
+used to create a space around the element outside definate border
+
+margin-top:
+margin-bottom:
+margin-left:
+margin-right:
+
+shorthand property:
+margin:100px TRBL
+margin:100px 300px TB RL
+margin:20px 30px 40px 50px TRBL
+margin:100px 20px 30px T-100px R-20px L-20px B-30px
+
+margin:auto => horizintally centered
+
+Padding:
+used to create a space around the element inside definate border
+
+padding-top: 20px;
+padding-bottom: 25px;
+padding-left: 29px;
+padding-right: 35px;
+
+padding:100px TRBL
+padding:100px 300px TB RL
+padding:20px 30px 40px 50px TRBL
+padding:100px 20px 30px T-100px R-20px L-20px B-30px
+
+Gradient:
+Smooth transition of 2 more colors
+property=>background-image:
+
+linear
+
+radial
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
