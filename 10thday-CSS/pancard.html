@@ -12,17 +12,124 @@
         span{
             color:red;
         }
+        table,tr,td{
+            border:1px solid black;
+            border-collapse: collapse;
+        }
     </style>
 </head>
 <body>
-    <div style="background-color:antiquewhite">
+    <!-- https://gist.github.com/rvsp/da08f5ffa59a76699213036005ee0f44 -->
+    <div class="container" style="background-color:antiquewhite">
         <div>
+            <!-- header section -->
             <div style="background-color:brown;color:white;text-align:center">
                 <h4>Request for New Pan Card or/And Changes or Correction in PAN Data</h4>
                 <p><i>Feilds are marked with <span>*</span> asterik are amndatory. To avoid mistake(s)
                     .please refer <u style="color: orange;">guidelines</u> and <u style="color:orange;">instructions</u></i>
                 </p>
             </div>
+            <!-- table section||detail of the Pan card -->
+            <div style="font-weight:bold;">
+                <table style="width:100%;">
+                    <!-- 1st row start -->
+                   <tr>
+                    <td></td>
+                    <td>
+                        <span>*</span>Whether citizen of India
+                        <label for="yes" style="padding-left: 50px; font-weight: lighter;">Yes</label>
+                        <input type="radio" name="" id="yes">
+
+                        <label for="no" style="padding-left: 20px; font-weight: lighter;">No</label>
+                        <input type="radio" name="" id="no">
+                    </td>
+                   </tr> 
+                   <!-- 1st row end -->
+                   <!-- 2nd row start -->
+                   <tr>
+                    <td></td>
+                    <td>
+                        <span>*</span>
+                        <label for="">Permanent Account Number (PAN)</label>
+                        <input type="text" name="" id="">
+                    </td>
+                   </tr>
+                   <!-- 2nd row end -->
+
+                   <!-- 3rd row start -->
+                   <tr>
+                        <td>
+                            <input type="checkbox" name="" id="">
+                        </td>
+                        <td>
+                            <span>*</span> 1. Name
+                        </td>
+                    </tr>
+                   <!-- 3rd row end -->
+
+                   <!-- 4th row start -->
+                   <tr>
+                    <td></td>
+                    <td>
+                        <label for="">Title</label>
+
+                        <label for="" style="padding-left:15px;">Shri/Mr</label>
+                        <input type="radio" name="" id="">
+
+                        <label for="" style="padding-left:15px;font-weight: lighter;">Smt./Mrs</label>
+                        <input type="radio" name="" id="">
+
+                        <label for="" style="padding-left:15px;font-weight: lighter;">Kumar.Ms</label>
+                        <input type="radio" name="" id="">
+                    </td>
+                   </tr>
+                    <!-- 4th row end -->
+                    <!-- 5th row start  1 way-->
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div class="full_nameWrapper" style="display:flex;">
+                                <div>
+                                    <label for="">Last Name/Surname</label><br/>
+                                    <input type="text" name="" id="">
+                                </div>
+                                <div style="padding-left: 250px;">
+                                    <label for="">First Name</label><br>
+                                    <input type="text" name="" id="">
+                                </div>
+                                <div style="padding-left: 250px;">
+                                    <label for="">Middle Name</label><br>
+                                    <input type="text" name="" id="">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- 5th row end -->
+
+                    <!-- 5th row start  2nd way-->
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div class="full_nameWrapper">
+                                <div style="display:inline-block ;">
+                                    <label for="">Last Name/Surname</label><br/>
+                                    <input type="text" name="" id="">
+                                </div>
+                                <div style="padding-left: 250px; display: inline-block;">
+                                    <label for="">First Name</label><br>
+                                    <input type="text" name="" id="">
+                                </div>
+                                <div style="padding-left: 250px; display:inline-block;">
+                                    <label for="">Middle Name</label><br>
+                                    <input type="text" name="" id="">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- 5th row end -->
+                </table>
+            </div>
+
         </div>
         <div></div>
     </div>

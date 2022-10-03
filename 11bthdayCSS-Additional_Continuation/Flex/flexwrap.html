@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width:300px;
+            background-color: maroon;
+            text-align: center;
+            margin: 20px 10px 5px 10px;
+            padding: 5px;
+            display: flex;
+        }
+        .flex_nowrap{
+            flex-wrap: nowrap;
+        }
+        .flex_wrap{
+            flex-wrap:wrap
+        }
+        .flex_wrap_reverse{
+            flex-wrap:wrap-reverse;
+        }
+        .item{
+            /* height:10px;
+            width:30px; */
+            background-color: orange;
+            padding:30px;
+            border:1px solid black;
+        }
+        .item1{
+            background-color: green;
+        }
+        .item2{
+            background-color: orangered;
+        }
+        .item3{
+            background-color: olive;
+        }
+        .item4{
+            background-color: lemonchiffon;
+        }
+        .item5{
+            background-color: cyan;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+    </div>
+    <div class="container flex_nowrap">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+    </div>
+    <div class="container flex_wrap">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+    </div>
+    <div class="container flex_wrap_reverse">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+    </div>
+</body>
+</html>

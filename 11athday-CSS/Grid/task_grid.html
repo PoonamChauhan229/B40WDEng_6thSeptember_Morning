@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .container{
+        width:500px;
+        height:auto;
+        text-align: center;
+        display: grid;
+        grid-gap:10px;
+        grid-template-columns: auto auto ;
+        grid-template-rows: 90px 70px 70px 90px ;
+        margin: 20px 10px 5px 10px;
+        padding: 5px;
+        border: 2px solid black;
+    }
+   
+    .item1{
+        background-color: green;
+        padding:30px;
+        grid-column:1/3;
+        grid-row: 1/2;
+    }
+    .item2{
+        text-align: center;
+        padding:30px;
+        background-color: orangered;
+        grid-column:1/2;
+        grid-row: 2/3;
+
+    }
+    .item3{
+        background-color: olive;
+        padding:30px;
+        grid-column:1/2;
+        grid-row: 3/4;
+    }
+    .item4{
+        background-color: rgb(234, 215, 40);
+        padding:30px;
+        grid-column:2/3;
+       grid-row: 2/4;
+    }
+    .item5{
+        background-color: cyan;
+        padding:30px;
+        grid-column:1/3;
+       grid-row: 4/5;
+    }
+
+</style>
+</head>
+
+<body>
+<div class="container">
+    <div class="item1">Header</div>
+    <div class="item2">
+        HOME
+    </div>
+    <div class="item3">Product and Service</div>
+    <div class="item4">Notification</div>
+    <div class="item5">Footer</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width:300px;
+            height: 230px;
+            background-color: maroon;
+            text-align: center;
+            margin: 20px 10px 5px 10px;
+            padding: 5px;
+            display: flex;
+        }
+        .no_prop{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .flex_strech{
+            flex-wrap: wrap;
+            align-content: stretch;
+        }
+
+        .flex_start{
+            flex-wrap: wrap;
+            align-content:flex-start;
+        }
+        .flex_end{
+            flex-wrap: wrap;
+            align-content: flex-end;
+        }
+        .flex_center{
+            flex-wrap: wrap;
+            align-content: center;
+        }
+        .flex_space_around{
+            flex-wrap: wrap;
+            align-content:space-around;
+        }
+        .flex_space_between{
+            flex-wrap: wrap;
+            align-content: space-between;
+        }
+        
+        .item{
+            /* height:10px;
+            width:30px; */
+            background-color: orange;
+            padding:30px;
+            border:1px solid black;
+        }
+        .item1{
+            background-color: green;
+        }
+        .item2{
+            background-color: orangered;
+        }
+        .item3{
+            background-color: olive;
+        }
+        .item4{
+            background-color: lemonchiffon;
+        }
+        .item5{
+            background-color: cyan;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container no_prop">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+    </div>
+    <div class="container flex_strech">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+    </div>
+    <div class="container flex_start">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+    </div>
+    <div class="container flex_end">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+    </div>
+    <div class="container flex_center">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+    </div>
+    <div class="container flex_space_around">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+    </div>
+    <div class="container flex_space_between">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+    </div>
+
+</body>
+</html>

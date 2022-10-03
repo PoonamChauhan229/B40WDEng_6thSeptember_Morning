@@ -81,6 +81,12 @@ linear
 radial
 
 
+GRID:
+manage both rows and columns
+
+Flex:-only one at a time
+either u will manage row or u will manage columns
+
 
 
 
