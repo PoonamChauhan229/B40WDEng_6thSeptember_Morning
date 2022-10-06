@@ -1,0 +1,146 @@
+Position Properties:
+
+5 properties:
+static
+relative
+absolute
+fixed
+sticky
+
+write:
+position:static
+position:relative
+position:absolute
+position:fixed
+position:sticky
+
+
+left
+or
+right
+-------------------
+top
+or
+bottom
+
+combinations:
+left top
+right top
+left bottom
+right bottom
+
+static:
+No change
+By default
+They are not affected by left right top bottom
+
+relative:
+position an HTML element relative to its normal position
+They are affected by left right top bottom
+Its affects the document flow
+space is created for them
+
+
+
+absolute:
+position wrt to its parent element=>by default=>body
+They are affected by left right top bottom
+space is not created for them
+Its affects the document flow
+
+Note:absolute is always with the relative(own parent-child relationship)
+parent=>relative
+child=>absolute
+
+
+fixed:
+They are affected by left right top bottom
+if you allot one specific location/position, it will be fixed
+They are not affected by scrolling
+
+sticky:
+They are affected by left right top bottom
+They are not affected by scrolling but once they reach to thier postion it will be fixed
+
+
+Overflow:
+---------
+|       |
+|       |
+|       |
+|       |
+|       |
+|       |
+---------
+
+width and height
+content of the element is too big to fit in the specified area
+
+4 Properties:
+visible
+hidden
+scroll
+auto
+
+visible:
+By default : visible property
+it will render outside the element's box
+
+hidden:
+the rest of the content will be hidden, if its not as per the desired height and width
+use: developers wants a control on the layout
+
+scroll:
+scrollbar is added for the rest of the content
+
+auto:
+scrollbar is added/visible for the rest of the content, if it is needed.
+
+Task:https://poonamchauhan229.github.io/Task_Overflow/
+
+
+Fontawesome:
+https://fontawesome.com/icons
+
+https://cdnjs.com/libraries/font-awesome
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

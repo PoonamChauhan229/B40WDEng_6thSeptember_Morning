@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* within 400px , this green color will be renedered */
+        @media screen and (max-width:400px){
+            div{
+                background-color: green;
+                font-size: 20px;
+            }
+        }
+        /* beyond 500px color will be rendered */
+        @media screen and (min-width:500px){
+            div{
+                background-color: pink;
+            }
+        }
+        /* between 600 and 768px color will be rendered */
+        @media (min-width:600px) and (max-width:768px) {
+            div,p{
+                background-color: red;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Hi Everyone
+    </div>
+    <p>
+        Hello P tag, How are you?
+    </p>
+</body>
+</html>
