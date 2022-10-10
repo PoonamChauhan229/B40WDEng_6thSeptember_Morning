@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+   
+    // 1st element
+      var element1 = document.createElement(`h1`);
+      element1.innerText = `this is inner text`;
+      //document.body.append(element1);
+
+   //2nd element
+      var element = document.createElement(`div`); // used to create element
+      element.innerHTML = `<h1>This is with inner html</h1>`
+      document.body.append(element1,element); //to append to html code //
+
+
+    //   appendChild
+
+    var element2 = document.createElement(`h1`);
+      element2.innerText = `Append Child`;
+      document.body.appendChild(element2)
+
+
+    </script>
+  </body>
+</html>

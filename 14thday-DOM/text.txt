@@ -1,0 +1,115 @@
+DOM:
+
+DOM
+Live DOM View
+https://software.hixie.ch/utilities/js/live-dom-viewer/
+
+
+DOM Manipulation:
+
+createElement:
+
+<div>This is a div Tag</div>
+
+
+Step1:document.createElement('')
+var division=document.createElement('div')
+
+Step2:innerHTML/innerText
+division.innerHTML=`<h1>hELLO</h1>`
+
+Step3:Append
+document.body.append(division)
+
+
+var p=document.createElement('p')
+p.innerText=`<h1>para</h1>`
+
+document.body.append(p)
+
+
+
+innerText: innerText is used to print the plain Text(Hello)
+innerHTML:innerHTML is used to print the Element(<h1>hELLO</h1>)
+
+Element:tag+content
+
+
+
+HTML+CSS=>
+Element
+Tag
+attributes=class/id
+etc.........
+
+setAttribute('class','className')
+setAttribute('id','idName')
+p.setAttribute('id','para1')
+
+Do we have multiple ids/class to one Element?
+Ans:class
+
+classList.add('className1','className2','className3'.........n)
+
+
+TARGET DOM:
+
+id class tag
+
+selectors
+
+id:
+document.getElementById('idname')
+=>search that particular id which has this idname
+
+class:
+document.getElementsByClassName('classname')
+eg:main=>4 div=>main classname
+=>search for all main classname in that document=>[]
+=>returns an array
+
+Tag:
+document.getElementsByTagName('TagName')
+=>returns an array
+
+______________________
+
+want to acess any Element with CSS selector
+
+id:#idName
+class:.className
+
+('#idName')
+('.className)
+
+querySelector:
+Select the 1st Element
+document.querySelector('#idName')
+document.querySelector('.className)
+
+
+querySelectorAll:
+Select all the Element
+returns an array of nodelist
+
+document.querySelectorAll('.className)
+document.querySelectorAll('#idName')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

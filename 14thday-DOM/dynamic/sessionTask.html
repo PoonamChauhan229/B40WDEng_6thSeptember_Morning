@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <!-- create the template dynamically -->
+    <!-- <div class="container">
+      <div class="row firstrow">
+        <div class="col">HI</div>
+      </div>
+    </div> -->
+
+    <script>
+        // 2 ways
+
+        //1st way:
+
+        var firstDiv=document.createElement('div')
+        firstDiv.setAttribute('class','container')
+
+        firstDiv.innerHTML=`
+            <div class="row firstrow">
+            <div class="col">HI</div>
+        </div>      
+            `
+        document.body.append(firstDiv)
+
+        //2nd way:
+
+        //maindiv=child-subchild
+        var secondDiv=document.createElement('div')
+        secondDiv.classList.add('container')
+
+        var rowDiv=document.createElement('div')
+        rowDiv.classList.add('row','firstrow')
+
+        var colDiv=document.createElement('div')
+        colDiv.setAttribute('class','col')
+        colDiv.innerHTML=`Hi`
+
+        secondDiv.append(rowDiv)
+        rowDiv.append(colDiv)
+        document.body.append(secondDiv)
+
+
+
+
+
+
+
+
+    </script>
+
+  </body>
+</html>

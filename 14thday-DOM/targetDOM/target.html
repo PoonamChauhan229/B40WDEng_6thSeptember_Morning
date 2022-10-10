@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="heading">Home</div>
+        <div class="heading">About</div>
+        <div class="heading">Services</div>
+
+        <div id="button1">Logout</div>
+
+        <button id="button1">Button</button>
+    </div>
+
+    <script>
+        var wrapper=document.getElementsByClassName('container')
+        console.log(wrapper)
+
+        var navbar=document.getElementsByClassName('heading')
+        console.log(navbar)
+
+        var button=document.getElementById('button1')
+        console.log(button)
+
+        var Tags=document.getElementsByTagName('div')
+        console.log(Tags)
+
+        //iterate
+
+        for(i=0;i<=Tags.length;i++){
+            console.log(Tags[i])
+        }
+
+        //iterate
+
+        for(i=0;i<=navbar.length;i++){
+            console.log(navbar[i])
+        }
+    </script>
+</body>
+</html>
