@@ -1,0 +1,57 @@
+Window common util functions
+events in JS
+TABLE DOM
+
+Alert Method:
+"OK" button
+alert()=>any information we want to give it to the user.
+        =>it enforces the user to read and acknowledge.
+        =>it will be an alertbox with a message and with a OK Button
+Google Chrome/Mozilla firefox
+
+Confirm Method:
+confirm()=>
+OK and CANCEL button
+taking an acknowledgement from the user
+dialog box with a message,with OK and CANCEL button
+OK=> returns true
+CANCEL=>returns false
+
+
+PROMPT Method:
+User can give an INPUT 
+Input=>OK=>ENtered Input value 
+Input=>CANCEL=>returns null
+dialog box with a message,with OK and CANCEL button
+
+
+setTimeout()
+=>execute only once that to after certain specific time
+function=>what we need to execute
+delay =>timer in milliseconds
+1000ms=1sec
+
+Syntax:
+setTimeout(function,delay)
+
+function functioname(){
+
+}
+
+
+MRF method
+array.map(()=>{})
+
+
+setInterval()
+=>execute again and again that to after certain specific time
+setInterval(function,delay)
+
+
+
+
+
+
+
+
+

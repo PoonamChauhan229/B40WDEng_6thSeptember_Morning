@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+        https://getbootstrap.com/docs/5.1/content/tables/
+        We are going to create the table Via DOM
+    -->
+    <script>
+      var table = document.createElement("table");
+      table.setAttribute("class", "table");
+
+      //thead
+      var thead = document.createElement("thead");
+
+      //tr
+      var tr = document.createElement("tr");
+
+      //th
+      var th1 = createNewElement("th", "#");
+      var th2 = createNewElement("th", "First");
+      var th3 = createNewElement("th", "Last");
+      var th4 = createNewElement("th", "Handle");
+
+      thead.append(tr);
+      tr.append(th1, th2, th3, th4);
+
+      //tbody
+      var tbody = document.createElement("tbody");
+      var tr1 = document.createElement("tr");
+
+      var td1 = createNewElement("td", "Mark");
+      var td2 = createNewElement("td", "Otto");
+      var td3 = createNewElement("td", "@mdo");
+
+      tr1.append(td1, td2, td3);
+
+      var tr2 = document.createElement("tr");
+
+      var td4 = createNewElement("td", "Jacob");
+      var td5 = createNewElement("td", "Thornton");
+      var td6 = createNewElement("td", "@fat");
+       
+      tr2.append(td4,td5,td6)
+
+      var tr3 = document.createElement("tr");
+
+      var td7 = createNewElement("td", "Larry the Bird");
+      var td8 = createNewElement("td", "");
+      var td9 = createNewElement("td", "@twitter");
+
+      tr3.append(td7,td8,td9)
+      tbody.append(tr1,tr2,tr3);
+      table.append(thead, tbody);
+      document.body.append(table);
+
+      function createNewElement(tag, value = " ") {
+        var ele = document.createElement(tag);
+        ele.innerHTML = value;
+        return ele;
+      }
+    </script>
+  </body>
+</html>

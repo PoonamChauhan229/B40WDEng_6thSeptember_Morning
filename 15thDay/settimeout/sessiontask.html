@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1 to 10 =>Happy Birthday -->
+
+    <h1 id="test"></h1>
+    <script>
+        // var msg="", counter=1;
+        // var h=document.getElementById("test");
+        // var timer = setInterval(bday,500);
+        
+        // function bday(){
+        //     if(counter>10){
+        //         // Stop animation
+        //         clearInterval(timer);
+        //         msg="Happy Birthday!!!"
+        //     }
+        //     else{
+        //         // animation 1 to 10
+        //         msg=counter;
+        //         counter++;
+        //     }
+        //     h.innerText = msg;
+            
+        // }
+
+        ////
+        var a = 0
+        var printText = document.getElementById("test")
+        var clear = setInterval(happy, 1000)
+        function happy() {
+            a++;
+            console.log(a)
+            if (a == 11) {
+                clearInterval(clear)
+                printText.innerText = "Happy Birthday"
+            }
+            else {
+                printText.innerText=a               
+            }
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #test{
+            width:100px;
+            height:100px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="test"></div>
+    <button onclick="stopAnim()">StopAnim</button>
+    <p id="para"></p>
+    <script>
+        
+        var paratext=document.getElementById('para')
+        var clearTime=setTimeout(anim,3000)
+
+        function anim(){
+            var divSize=document.getElementById('test')
+            console.log(divSize)
+            divSize.style.backgroundColor="pink";
+            divSize.style.width="200px"
+            paratext.innerHTML="Animation Completed"
+
+        }    
+
+        function stopAnim(){
+            clearTimeout(clearTime)
+            console.log("Animation Stopped")
+            paratext.innerHTML="Animation Stopped"
+        }
+    </script>
+</body>
+</html>
