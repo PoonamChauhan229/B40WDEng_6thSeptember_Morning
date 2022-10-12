@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- https://i.ibb.co/4Y3fCLv/pic-bulbon.gif
+    https://i.ibb.co/PZHKWG4/pic-bulboff.gif
+
+    <img src="" alt="">
+    src.match()
+    click
+    if else
+
+    12:40 -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+      </head>
+      <body>
+        <div>
+          <img src=https://i.ibb.co/PZHKWG4/pic-bulboff.gif id="bulbImage">
+        </div>
+        <button id="button">Switch ON</button>
+
+        <script>
+          var bulbImage = document.getElementById("bulbImage");
+          var button=document.getElementById('button')
+
+          button.addEventListener('click',function bulbSwitches(){
+            if(bulbImage.src.match('https://i.ibb.co/PZHKWG4/pic-bulboff.gif')){
+                bulbImage.src="https://i.ibb.co/4Y3fCLv/pic-bulbon.gif"
+                button.innerText="Switch OFF"
+            }else{
+                bulbImage.src="https://i.ibb.co/PZHKWG4/pic-bulboff.gif"
+                button.innerText="Switch ON"
+            }
+          }) 
+        </script>
+      </body>
+    </html>
+  </body>
+</html>

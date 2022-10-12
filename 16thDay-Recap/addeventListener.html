@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-- click event -->
+     <button id="clickButton" value="Click">Click Me</button>
+
+
+     <script>
+
+        var clickButton=document.getElementById('clickButton')
+        // clickButton.addEventListener(event,function)//2 parameters event=>without "on"
+        var count=0;
+        clickButton.addEventListener('click',function buttonPressed(event){
+             count++;
+             console.log(`Button is Pressed ${count}`)
+             console.log(event)
+             console.log(event.target.id)
+             console.log(event.target.value)
+             console.log(event.height)
+         }
+        )
+     </script>
+
+      <!-- input event -->
+    <input type="text" name="" id="input2">
+    <p id="paraText"></p>
+
+    <script>
+        var paraText=document.getElementById('paraText')
+        var input2=document.getElementById('input2')
+        input2.addEventListener('input', function inputChange(event){
+            console.log("Input Event Occured")
+            console.log(event)
+            console.log(event.target.value)
+            paraText.innerText=event.target.value
+        })
+       
+    </script>
+
+<input type="text" name="" id="blurEve">
+<script>
+    var blurEvent=document.getElementById('blurEve')
+    blurEvent.addEventListener('blur', function blurEventInput(event){
+        console.log("blur event triggered")
+        console.log(event)
+        console.log(event.target.value)
+    })
+</script>
+
+</body>
+</html>

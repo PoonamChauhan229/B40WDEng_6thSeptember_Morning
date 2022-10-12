@@ -1,0 +1,51 @@
+Event:
+When an action is performed event is triggered.
+Event is an object
+
+Eg: Click Button:
+Login Button
+
+onclick
+onchange 
+input
+
+
+let text="Vist Mumbai"
+undefined
+text.replace("Visit","Come")
+'Vist Mumbai'
+var replace=text.replace("Visit","Come")
+undefined
+replace
+'Vist Mumbai'
+var replace=text.replace("Vist","Come")
+undefined
+replace
+'Come Mumbai'
+let text="Visit Mumbai Visit"
+undefined
+var replace=text.replace("Visit","Come")
+undefined
+replace
+'Come Mumbai Visit'
+let text="Visit Mumbai Visit"
+undefined
+var replace=text.replace(/Visit/g,"Come")
+undefined
+replace
+'Come Mumbai Come'
+var replace=text.replace(/ /g,"Come")
+undefined
+replace
+'VisitComeMumbaiComeVisit'
+
+let text="Visit Mumbai Visit"
+undefined
+var replace=text.replace(/ /g,"")
+undefined
+replace
+'VisitMumbaiVisit'
+replace.length
+16
+text.length
+18

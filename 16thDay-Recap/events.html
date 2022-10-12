@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- click event -->
+    <button id="clickButton" onclick="buttonPressed(event)" value="Click">Click Me</button>
+
+    <script>
+        var count=0;
+        function buttonPressed(event){
+            count++;
+            console.log(`Button is Pressed ${count}`)
+            console.log(event)
+            console.log(event.target.id)
+            console.log(event.target.value)
+            console.log(event.height)
+        }
+    </script>
+
+    <!-- input event -->
+    <input oninput="inputChange(event)" type="text" name="" id="">
+    <p id="paraText"></p>
+
+    <script>
+        var paraText=document.getElementById('paraText')
+        function inputChange(event){
+            console.log("Input Event Occured")
+            console.log(event)
+            console.log(event.target.value)
+            paraText.innerText=event.target.value
+        }
+    </script>
+
+<!-- blur event -->
+<input onblur="blurEvent(event)" type="text" name="" id="">
+
+<script>
+    function blurEvent(event){
+        console.log("Blur event triggered")
+        console.log(event)
+        console.log(event.target.value)
+    }
+</script>
+
+<!-- mouseover event -->
+<p onmouseover="mouseOver(event)">Keep Cursor over me</p>
+
+<script>
+    function mouseOver(event){
+        console.log("mouseover Event is called")
+        alert("Mouse event triggered")
+        console.log(event)
+    }
+</script>
+
+<!-- Focus Event -->
+<input onfocus="focusEvent(event)" type="text" name="" id="input1">
+
+<script>
+    var input1=document.getElementById("input1")
+    function focusEvent(event){
+        console.log("Focus event is triggered")
+        input1.style.background="aqua"
+        console.log(event.target.value)
+    }
+</script>
+
+</body>
+</html>

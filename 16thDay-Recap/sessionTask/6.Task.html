@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- With Javascript write a simple form validation -->
+    <!-- username and password
+    if error then display error -->
+    <form onsubmit="formSubmit(event)">
+        <label for="username">UserName:</label>
+        <input type="text" name="uname" id="username">
+        <span id="errorname"></span>
+        
+        <br>
+
+        <label for="password">Password:</label>
+        <input type="password" name="pwd" id="password">
+        <span id="errorpwd"></span>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+
+        <script>
+            function formSubmit(event){
+                event.preventDefault();
+                // console.log(event)
+
+                var username=document.getElementById('username')
+                console.log(username.value)
+
+                var password=document.getElementById('password')
+                console.log(password.value)
+
+                var errorname=document.getElementById('errorname')
+                var errorpwd=document.getElementById('errorpwd')
+
+
+                if(username.value.length<5){
+                    console.log("less than 5")
+                    errorname.innerText="username characters should be greater than 5 letters"
+                    errorname.style.color="red"
+                }
+
+                if(password.value.length<5){
+                    errorpwd.innerText="Weak Password"
+                    console.log(password.value.length)
+                    errorpwd.style.color="yellow"
+                }
+                else if(password.value.length>5 && password.value.length<10){
+                    errorpwd.innerText="Strong Password"
+                    console.log(password.value.length)
+                    errorpwd.style.color="green"
+                }
+                else if(password.value.length>10){
+                    errorpwd.innerText="Password length should be less than 10 characters"
+                    errorpwd.style.color="red"
+                }
+            }
+        </script>
+
+</body>
+</html>

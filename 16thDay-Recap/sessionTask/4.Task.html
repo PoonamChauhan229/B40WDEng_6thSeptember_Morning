@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="inputText"><br>
+    <span id="spanElement"></span><br>
+    <span id="spanElement1"></span>
+
+    <script>
+        var inputText=document.getElementById('inputText')
+        
+        var spanElement=document.getElementById('spanElement')
+        var spanElement1=document.getElementById('spanElement1')
+
+        inputText.addEventListener('input',()=>{
+            console.log(inputText.value)
+            console.log(inputText.value.length)
+            spanElement.innerText=inputText.value.length
+            spanElement1.innerText=inputText.value.replace(/ /g,"").length
+
+        })
+    </script>
+</body>
+</html>

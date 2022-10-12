@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Display the mouse X and Y coordinates in a <span> tag when you click on a 
+        <h1> tag which contains a paragraph. -->
+        <h1 id="h1">
+            Display the mouse X and Y coordinates in a spantag when you click on a h1tag which contains a paragraph.
+        </h1>
+        <span id="spanElement"></span>
+
+<script>
+    var h1=document.getElementById('h1')
+    var spanElement=document.getElementById('spanElement')
+    h1.addEventListener('click',function(event){
+        console.log(event)
+        console.log(event.clientX)
+        console.log(event.clientY)
+        spanElement.innerText=`mouse X and Y coordinates = ${event.clientX} and ${event.clientY} `
+    })
+
+</script>
+
+</body>
+</html>
