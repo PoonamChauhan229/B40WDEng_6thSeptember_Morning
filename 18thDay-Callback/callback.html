@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function callMe() {
+        console.log("I am a Callback function");
+      }
+      function greet(name, callback) {
+        console.log(`Hi , My name is ${name}`);
+        callback();
+      }
+      greet("Prathap", callMe);
+      // _________________________________
+
+      // sum of 2 number
+      // callback
+      function display(res) {
+        console.log(`Sum of 2 Nums is:${res}`);
+      }
+
+      function sum(n1, n2, callback) {
+        var total = n1 + n2;
+        callback(total);
+        // console.log(total)
+      }
+      sum(2, 3, display);
+
+      // Display your name
+      // Welcome, name to our Guvi World!!!
+
+      function display(name){
+            console.log(`${name} welcome to guvi`)     
+        }
+        function data(fullname,callback){
+            callback(fullname);
+        }
+        data('HariHaran',display);
+
+
+
+        // set Timeout
+
+        //cb function
+        function sayName(name){
+            console.log(`hello ${name}`)
+        }
+
+        function newfunc(fname,callback){
+            console.log(`Hello world from newfunc ${fname}`)
+            callback(fname)
+        }
+        setTimeout(newfunc,3000,"John",sayName)
+        newfunc("John",sayName)
+
+
+
+    </script>
+  </body>
+</html>
