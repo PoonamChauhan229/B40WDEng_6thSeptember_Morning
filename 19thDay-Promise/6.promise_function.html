@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function
+        function displayData(data){
+            console.log(data)
+        }
+        let p=new Promise((resolve,reject)=>{
+            let x=0;
+            if(x==0){
+                resolve("ok")
+            }else{
+                reject("Error")
+            }
+        })
+        p.then((res)=>{displayData(res)}).catch((err)=>{displayData(err)})
+    </script>
+</body>
+</html>

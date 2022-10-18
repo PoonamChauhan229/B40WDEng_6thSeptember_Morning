@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const p = new Promise(() => {});
+      console.log(p);
+
+      const p1 = new Promise((resolve,reject) => {});
+      console.log(p1);
+
+
+      const p2 = new Promise((resolve,reject) => {
+        resolve("Promise resolved 2")
+      });
+      console.log(p2);
+
+      const p3 = new Promise((resolve,reject) => {
+        reject("Promise rejected 3")
+      });
+      console.log(p3);
+
+      const p4 = new Promise((resolve,reject) => {
+        resolve("Promise resolved 4")
+      });
+      console.log(p4);
+
+      const p5=new Promise((resolve,reject)=>{
+        resolve("Promise is Kept")
+        reject("Promise not kept")
+      })
+      console.log(p5)
+
+      const p6=new Promise((resolve,reject)=>{
+        reject("Promise not kept 1")
+        resolve("Promise is Kept 1")       
+      })
+      console.log(p6)
+
+    //   if condition
+
+    const p7=new Promise((resolve,reject)=>{
+        if(true){
+            resolve("Meet My Friend")
+        }
+        else{
+            reject("Sorry, Couldnt turn up")
+        }
+    })
+    console.log(p7)
+
+
+    const p8=new Promise((resolve,reject)=>{
+        if(false){
+            resolve("Meet My Friend")
+        }
+        else{
+            reject("Sorry, Couldnt turn up")
+        }
+    })
+    console.log(p8)
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+  </body>
+</html>

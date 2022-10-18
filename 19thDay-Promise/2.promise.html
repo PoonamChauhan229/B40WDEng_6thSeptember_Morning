@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var age = 21;
+      const p = new Promise((resolve, reject) => {
+        if (age > 20) {
+          resolve("Eligible for Voting");
+        } else {
+          reject("Not Eligible");
+        }
+      });
+      console.log(p);
+
+      // you should take an input from the user and execute the same peice of code.
+      // prompt
+
+    //   var age1 = prompt("enter the age");
+    var age1=50;
+      const p1 = new Promise((resolve, reject) => {
+        if (age1 >= 20) {
+          resolve("eligible for voting");
+        } else {
+          reject("NOT eligible");
+        }
+      });
+      // console.log(p1)
+      // to access the fulfilled value =>.then()
+      p1.then((res) => {
+        console.log(res);
+      })
+        //to handle the error/failure/not fullfil
+        .catch((err) => {
+          console.log(err);
+        });
+
+        // 
+
+      var age2 = 4;
+      const p2 = new Promise((resolve, reject) => {
+        if (age2>20) {
+          resolve("Eligible for Voting-01");
+        } else {
+          reject("Not Eligible-02");
+        }
+      });
+      p2.then((res)=>{console.log(res)}).catch((err)=>{console.log(err)})
+    </script>
+  </body>
+</html>

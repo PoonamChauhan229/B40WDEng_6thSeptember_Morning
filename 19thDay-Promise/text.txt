@@ -1,0 +1,83 @@
+Promise:
+Giving an assurance
+Taking an oath
+
+2 freinds decided to meet in a resturant
+exchnage of promise that surely @ 5pm we will be at xyz resturant and we will enjoy
+on a phone call
+
+=>they will meet @ 5pm at xyz resturant+ enjoy+dance
+=>they dont meet up itself and promise which they made is not fulfilled
+
+Promise=>
+Promise is one of the method to handle to asunc ops
+so all the developers use this Promise
+
+Promise is an object
+=>keyword=>new 
+
+var xyz=new Promise()
+function as a parameters=>
+it takes 2 parameters
+=>resolve
+=>reject
+const p=new Promise(()=>{})
+
+#3 States of Promises:
+1-Pending=>Initial state=>Pending unless and untill asyn ops is in process
+2-fulfilled=>fulfilled, we will get the value=>.then()
+3-Rejected=>fails,we will get here error=> to handle the error we have something called=>catch block
+    .catch()
+
+Promise can be either fulfilled or fails
+            either resolved or Rejected
+Both will never happen at a time
+
+
+Initial state=>Pending
+Return type=>object
+
+Promise chaining
+=>handle mutiple async operations
+=>multilpe .then we have to use
+=>complexity as well
+
+To avoid this async and await
+
+
+Multiple promises: not a proper way of handling
+
+Promise.all
+=>Deals with all of them
+=>Until, all your promises are fulfilled, it wont execute/display the single promise
+=>it will wait for all of them execute
+=>return=> array of promises
+=>it is an iterable form.
+
+if any promise fails,
+it will directly go to catch block and shows the error
+So thats wy, its not an effective way 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
