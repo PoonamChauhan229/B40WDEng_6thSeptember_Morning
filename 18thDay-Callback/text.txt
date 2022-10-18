@@ -1,0 +1,39 @@
+
+
+function orderplaced() {
+   setTimeout(function () {
+    console.log("Ordered is Placed");
+  }, 1000);
+  }
+
+ 
+
+
+
+
+function addtobag() {
+  console.log("added to bag");
+    function ordercreation() {
+    console.log("order is created");
+        function proceedpayment() {
+            console.log("proceedpayment");
+            function transactionprocess() {
+                 console.log("transactionprocess");
+                    function orderplaced() {
+                        setTimeout(function () {
+                            console.log("Ordered is Placed");
+                        }, 1000);
+  }
+
+  }
+  }
+    }
+}
+addtobag();
+
+
+add to bag
+order is created
+proceed to payment
+transaction
+order is placed
