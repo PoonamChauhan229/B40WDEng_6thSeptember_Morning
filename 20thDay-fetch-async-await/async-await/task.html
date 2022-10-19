@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Random Number generate
+        // replce index value
+         //you have to display weather data wrt to cityname
+        // https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
+        // cityname should be extracted from rest countries
+        // https://restcountries.com/v3.1/all
+
+        // async await
+
+        async function getWeatherCityData(){
+            try{
+                var extractCityName= await fetch('https://restcountries.com/v2/all')
+            var resCityName=await extractCityName.json()
+            console.log(resCityName[0].name)
+
+            var randomNum=Math.floor(Math.random()*resCityName.length)
+            console.log(randomNum)
+            console.log(resCityName[randomNum].name)
+            var cityName=resCityName[randomNum].name
+            console.log(cityName)
+
+            let extractWeatherData= await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=68efa0885519a6f01d76917c463ada68`)
+
+            let resCityWeatherdata= await extractWeatherData.json()
+            console.log(resCityWeatherdata)
+            }
+            catch(err){
+                console.log("Some error Occured"+err)
+            }
+        }
+        getWeatherCityData()
+
+        // try and catch
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

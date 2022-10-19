@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //you have to display weather data wrt to cityname
+        // https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
+        // cityname should be extracted from rest countries
+        // https://restcountries.com/v3.1/all
+
+        var extractCityName=fetch('https://restcountries.com/v2/all')
+        .then((res)=>{return res.json()})
+        .then((data)=>{
+            // console.log(data)
+            console.log(data[0].name)
+            var cityName=data[0].name
+
+            fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=68efa0885519a6f01d76917c463ada68`)
+            .then((res)=>{return res.json()})
+            .then((data)=>{console.log(data)})
+            .catch((err)=>{console.log("Some error occureed=>"+err)})
+        })
+
+        // Random Number generate
+        // replce index value
+        // 
+
+        var extractCityName=fetch('https://restcountries.com/v2/all')
+        .then((res)=>{return res.json()})
+        .then((data)=>{
+            // console.log(data)
+
+            var randomNum=Math.floor(Math.random()*data.length)
+            console.log(randomNum)
+            console.log(data[randomNum].name)
+            var cityName=data[randomNum].name
+
+            fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=68efa0885519a6f01d76917c463ada68`)
+            .then((res)=>{return res.json()})
+            .then((data)=>{console.log(data)})
+            .catch((err)=>{console.log("Some error occureed=>"+err)})
+        })
+
+        // task:extract lat lng from restcountries and pass it weatherapi=>random index value
+        //promise +async await
+
+
+
+
+
+
+    </script>
+</body>
+</html>

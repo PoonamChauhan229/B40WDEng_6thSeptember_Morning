@@ -1,0 +1,40 @@
+Fetch
+Async Await
+
+Fetch:
+just an alternative to Xml HTTP request=>API
+It provides an interface for fetcjing the resources
+
+var req=fetch("URL")//rest countries
+
+Result of a fetch is always an PROMISE
+
+Hold data in form of "ReadableStream" format
+
+ReadableStream is the format where actually the resultant of headers have been stored
+
+Fetch:
+.json()
+
+
+Math.ceil(0.4)
+1
+Math.ceil(5.1)
+6
+Math.ceil(0.6)
+1
+Math.ceil(0.2)
+1
+Math.floor(0.4)
+0
+Math.floor(0.6)
+0
+Math.floor(5.9)
+5
+Math.round(1.5)
+2
+Math.round(1.2)
+1
+
+
+
