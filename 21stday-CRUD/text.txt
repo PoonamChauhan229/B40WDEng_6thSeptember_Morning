@@ -1,0 +1,11 @@
+CRUD Applucation:
+C:Create=>POST Method
+R:Read=>GET
+U:Update
+D:Delete
+
+Mock API:
+
+MockAPI is a simple tool that lets you easily mock up APIs, generate custom data, and preform operations on it
+
+console.table()
