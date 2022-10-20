@@ -41,6 +41,32 @@
         getWeatherCityData()
 
         // try and catch
+        // Pratap Code
+        async function getData() {
+            try{
+
+                var inputData = await fetch('https://restcountries.com/v2/all')
+                var outputData = await inputData.json()
+                let number = Math.floor(Math.random() * outputData.length)
+                console.log(outputData[number].latlng)
+                let lat1 = outputData[number].latlng[0]
+                let lng1 = outputData[number].latlng[1]
+                console.log(lat1,lng1)
+                var countryData = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat1}&lon=${lng1}&appid=6427220c270a3cc276a1f10311138b0c`)
+                var countryOutputData = await countryData.json()
+                console.log(countryOutputData)
+            }
+            catch(err){
+                console.log("Some error Occured"+err)
+            }
+
+        }
+
+        getData()
+       
+
+
+
 
 
 

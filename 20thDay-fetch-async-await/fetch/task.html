@@ -50,6 +50,26 @@
         //promise +async await
 
 
+        var requestData = fetch('https://restcountries.com/v2/all')
+            .then((res) => { return res.json() }).then((data) => {
+                console.log(data)
+                console.log(data[0].latlng[0])
+                let num = Math.floor(Math.random() * data.length)//random number index value
+                console.log(data[num].latlng)
+
+                let lat = data[num].latlng[0]//latitude
+                let lng = data[num].latlng[1]//longitude
+                // console.log(lat)
+                // console.log(lng)
+                // console.log(data[num].latlng)
+                var countyAPI = fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=6427220c270a3cc276a1f10311138b0c`)
+                    .then((res) => { return res.json() })
+                    .then((data1) => {console.log(data1)})
+                    .catch((err) => { console.log(err) })
+            })
+
+
+
 
 
 
