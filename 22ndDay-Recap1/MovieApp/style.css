@@ -19,3 +19,12 @@ img{
     background-color: #fff;
     transition: opacity 0.9s ease-in-out;
 }
+/* .green{
+    color:green;
+} */
+.red{
+    color:red;
+}
+.orange{
+    color:orange;
+}
