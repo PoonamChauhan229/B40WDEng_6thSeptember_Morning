@@ -41,25 +41,27 @@
             // var data=JSON.parse(request.response)
             var data=JSON.parse(this.response)
             console.log(data)
-            console.log(data[0].area)
-            console.log(data[0].name)
-            console.log(data[0].name.common)
+            // console.log(data[0].area)
+            // console.log(data[0].name)
+            // console.log(data[0].name.common)
+            // console.log(data[0].flags.png)
 
             // For loop
             for(i=0;i<data.length;i++){
-                console.log(data[i].name)
+                // console.log(data[i].name)
+                console.log(data[i].flags.png)
             }
 
-            // for Of loop
-            for(var obj of data){
-                console.log(obj.name)
-            }
+            // // for Of loop
+            // for(var obj of data){
+            //     console.log(obj.name)
+            // }
 
 
-            // for In loop
-            for(var key in data){
-                console.log(data[key].name);
-            }
+            // // for In loop
+            // for(var key in data){
+            //     console.log(data[key].name);
+            // }
 
 
 

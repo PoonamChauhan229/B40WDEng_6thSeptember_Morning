@@ -1,0 +1,56 @@
+<div class="card-header">
+    Product ${count}
+</div>
+<div class="card-body">
+  <h5>
+  <span>Title:</span><input type="text" class="" id="title${count}" value=${title.value} readOnly></h5>
+  <p class="card-text">
+  <span>Description:</span><input type="text" class="" id="desc${count}" value=${desc.value} readOnly>
+  </p>
+
+  <button id="edit${count}" class="btn btn-primary" onclick="editTask(${count})">Edit</button>
+  <button id="delete${count}"class="btn btn-danger" onclick="deleteTask(${count})">Delete</button>
+
+  <p class="card-footer">
+  <span>Posted On:</span><input type="text" class="" id="date${count}" value=${date.value} readOnly>    
+  </p>
+</div>
+
+
+
+<!-- edit function -->
+function editTask(id){
+  console.log("Task edited successfully")
+  // title/date/desc
+  // specific ids
+  document.getElementById("title"+id).removeAttribute('readOnly')
+  document.getElementById("date"+id).removeAttribute('readOnly')
+  document.getElementById("desc"+id).removeAttribute('readOnly')
+
+  // document.getElementById("title").value=document.getElementById("title"+id).value
+
+  document.getElementById("title"+id).style.backgroundColor="lightgrey"
+  document.getElementById("date"+id).style.backgroundColor="lightgrey"
+  document.getElementById("desc"+id).style.backgroundColor="lightgrey"
+  // above div inputbox id.value=id.value
+
+}
+
+
+<!-- div input  -->
+
+
+
+
+
+<div class="card-header">
+  Product ${count}
+</div>
+<div class="card-body">
+ <h5 class="card-title mb-3" id="title${count}" contentEditable="false">${title.value}</h5>
+ <p class="card-text mb-0"  id="desc${count}" contentEditable="false">${desc.value}</p>
+ <p class="card-text mb-0"  id="date${count}" contentEditable="false">${date.value}</p>
+
+ <button id="edit${count}" class="btn btn-primary" onclick="editTask(${count})">Edit</button>
+ <button id="delete${count}"class="btn btn-danger" onclick="deleteTask(${count})">Delete</button>
+</div> 
